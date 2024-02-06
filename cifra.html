@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de César</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Cifra de César</h2>
+
+        <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="shift">Deslocamento:</label>
+            <input type="number" class="form-control" id="shift" placeholder="Digite o deslocamento">
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="encrypt()">Criptografar</button>
+        <button type="button" class="btn btn-success" onclick="decrypt()">Descriptografar</button>
+
+        <div class="mt-4">
+            <label for="result">Resultado:</label>
+            <textarea class="form-control" id="result" rows="3" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
